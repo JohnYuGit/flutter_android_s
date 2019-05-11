@@ -17,7 +17,10 @@ Widget buildView (
           GestureDetector(
             child: Container(
               height: 36.0,
-              color: state.isDone ? Colors.green : Colors.red,
+              decoration: BoxDecoration(
+                color: state.isDone ? Colors.green : Colors.red,
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(8.0), topRight: Radius.circular(8.0)),
+              ),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -47,7 +50,10 @@ Widget buildView (
           ),
           Container(
             padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 24.0),
-            color: const Color(0xFFE0E0E0),
+            decoration: BoxDecoration(
+              color: const Color(0xFFE0E0E0),
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8.0), bottomRight: Radius.circular(8.0)),
+            ),
             child: Row(
               children: <Widget>[
                 Expanded(

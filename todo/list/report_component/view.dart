@@ -11,7 +11,10 @@ Widget buildView(
   return Container(
     margin: const EdgeInsets.all(8.0),
     padding: const EdgeInsets.all(8.0),
-    color: Colors.blue,
+    decoration: BoxDecoration(
+      color: Colors.blue,
+      borderRadius: BorderRadius.circular(8.0),
+    ),
     child: Row(
       children: <Widget>[
         Container(

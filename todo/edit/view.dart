@@ -23,9 +23,12 @@ Widget buildView(TodoEditState state, Dispatch dispatch, ViewService viewService
                 ),
                 Expanded(
                   child: Container(
-                    color: const Color(0xFFE0E0E0),
                     padding: const EdgeInsets.all(8.0),
                     margin: const EdgeInsets.only(left: 8.0),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFE0E0E0),
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
                     child: EditableText(
                         controller: state.nameEditController,
                         focusNode: state.focusNodeName,
@@ -53,9 +56,12 @@ Widget buildView(TodoEditState state, Dispatch dispatch, ViewService viewService
                   ),
                   Expanded(
                     child: Container(
-                      color: const Color(0xFFE0E0E0),
                       padding: const EdgeInsets.all(8.0),
                       margin: const EdgeInsets.only(left: 8.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFE0E0E0),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
                       child: EditableText(
                           controller: state.descEditController,
                           focusNode: state.focusNodeDesc,

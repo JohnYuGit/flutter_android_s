@@ -8,7 +8,6 @@ class ReportState implements Cloneable<ReportState> {
 
   @override
   ReportState clone() {
-    // TODO: implement clone
     return ReportState()
         ..total = total
         ..done = done;
@@ -16,7 +15,6 @@ class ReportState implements Cloneable<ReportState> {
 
   @override
   String toString() {
-    // TODO: implement toString
     return 'ReportState{total $total, done: $done}';
   }
 }

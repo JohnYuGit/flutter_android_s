@@ -8,7 +8,6 @@ class PageState implements Cloneable<PageState> {
 
   @override
   PageState clone() {
-    // TODO: implement clone
     return PageState()..toDos = toDos;
   }
 }

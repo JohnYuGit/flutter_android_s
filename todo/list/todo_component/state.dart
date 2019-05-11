@@ -12,7 +12,6 @@ class ToDoState implements Cloneable<ToDoState> {
 
   @override
   ToDoState clone() {
-    // TODO: implement clone
     return ToDoState()
       ..uniqueId = uniqueId
       ..title = title
@@ -22,7 +21,6 @@ class ToDoState implements Cloneable<ToDoState> {
 
   @override
   String toString() {
-    // TODO: implement toString
     return 'ToDoSatate{uniqueId: $uniqueId, title: $title, desc: $desc, isDone: $isDone}';
   }
 
